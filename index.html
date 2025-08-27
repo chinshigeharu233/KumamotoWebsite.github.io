@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>熊本城（Kumamoto）</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background-color: #f8f5f2;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background: linear-gradient(135deg, #D20103 0%, #9e3a1e 100%);
+            color: white;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        h2 {
+            color: #D20103;
+            border-bottom: 2px solid #e8612d;
+            padding-bottom: 10px;
+            margin: 30px 0 20px;
+        }
+        
+        h3 {
+            color: #9e3a1e;
+            margin: 25px 0 15px;
+        }
+        
+        .quote {
+            font-style: italic;
+            text-align: center;
+            font-size: 1.2rem;
+            margin: 20px 0;
+            color: #666;
+            padding: 0 10px;
+        }
+        
+        .neutral {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            margin: 20px 0;
+            border: 2px dashed #e8612d;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #EFC3CA;
+            color: white;
+            font-weight: bold;
+        }
+        
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .city-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .city-card h3 {
+            color: #e8612d;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        .event {
+            background: #fff9e6;
+            border-left: 5px solid #e8612d;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .article {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        
+        .flag-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .flag {
+            width: 200px;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+        .avator {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #EFC3CA;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #777;
+            border-top: 1px solid #ddd;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            table {
+                font-size: 0.9rem;
+            }
+            
+            th, td {
+                padding: 8px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><sup>くまもと</sup>
+            <br>
+            熊本城
+          <br>
+        （Kumamoto）</h1>
+        <div class="flag-container">
+            <img src="https://wiki.fishport.net/images/4/4d/%E7%86%8A%E6%9C%AC%E5%9F%8E%E6%97%97.png" alt="熊本城旗" class="flag">
+        </div>
+    </header>
+    
+    <section>
+        <h2>简介</h2>
+        <p class="quote">繁花似霰，樱色熊本。</p>
+        
+        <p>熊本建设始终致力于<strong>和平发展、交通互联、沟通贸易</strong>，为创建一个以生存创造为目标的城镇而持续努力。</p>
+        
+        <div class="neutral">
+            <u>该城镇永久中立</u>
+        </div>
+      <h3>成员</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>头像</th>
+                    <th>人物</th>
+                    <th>身份</th>
+                    <th>所属</th>
+                    <th>状态</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><div class="avator">
+                        <img src="mc_avatar/Comecat.png" alt="Comecat" class="avator">
+                    </div></td>
+                    <td><b>Comecat</b></td>
+                    <td>前城主/元知事</td>
+                    <td>熊本主城</td>
+                    <td>繁忙</td>
+                </tr>
+                <tr>
+                    <td><div class="avator">
+                        <img src="mc_avatar/Asahi_Natsugiri.png" alt="Natsugiri" class="avator">
+                    <td><b>Natsugiri</b></td>
+                    <td>城主/知事</td>
+                    <td>熊本主城</td>
+                    <td>活跃</td>
+                </tr>
+                <tr>
+                    <td><div class="avator">
+                        <img src="mc_avatar/BianZidan.png" alt="BianZidan" class="avator">
+                    <td><b>BianZidan</b></td>
+                    <td>土木部部长</td>
+                    <td>熊本主城</td>
+                    <td>活跃</td>
+                </tr>
+                <tr>
+                    <td><div class="avator">
+                        <img src="mc_avatar/dee.png" alt="dee" class="avator">
+                    <td><b>dee</b></td>
+                    <td>居民</td>
+                    <td>熊本主城</td>
+                    <td>繁忙</td>
+                </tr>
+                <tr>
+                    <td><div class="avator">
+                        <img src="mc_avatar/mariah.png" alt="mariah" class="avator">
+                    <td><b>mariah</b></td>
+                    <td>居民</td>
+                    <td>熊本主城</td>
+                    <td>繁忙</td>
+                </tr>
+                <tr>
+                    <td><div class="avator">
+                        <img src="mc_avatar/Kaylin.png" alt="Kaylin" class="avator">
+                    <td><b>Kaylin</b></td>
+                    <td>自然资源与能源厅厅长</td>
+                    <td>若洲城</td>
+                    <td>活跃</td>
+                </tr>
+                <tr>
+                    <td><div class="avator">
+                        <img src="mc_avatar/Dejavu.png" alt="Dejavu" class="avator">
+                    <td><b>Dejavu</b></td>
+                    <td>农业水利部部长、外务部部长</td>
+                    <td>八代城</td>
+                    <td>活跃</td>
+                </tr>
+            </tbody>
+        </table>
+<p></p>
+      <h3>相关人物</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>头像</th>
+                    <th>人物</th>
+                    <th>身份</th>
+                    <th>所属</th>
+                    <th>状态</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><div class="avator">
+                        <img src="mc_avatar/LX_Domod.png" alt="LX_Domod" class="avator">
+                    </div></td>
+                    <td><b>LX_Domod</b></td>
+                    <td>和歌山城主</td>
+                    <td>和歌山城</td>
+                    <td>活跃</td>
+                </tr>
+            </table>
+      <h3>现实的熊本</h3><a href="https://www.city.kumamoto.jp/kiji0031928/index.html">熊本市のプロフィール（熊本市官网）</a>
+        <p>本市は九州の中央、熊本県の西北部、東経130度42分・北緯32度48分の位置にあります。<br>
+地勢は、金峰山を主峰とする複式火山帯と、これに連なる立田山等の台地からなり、東部は阿蘇外輪火山群によってできた丘陵地帯、南部は白川の三角州で形成された低平野からなっています。<br>
+気候は、有明海との間に金峰山系が連なるため、内陸盆地的気象条件となり、寒暖の較差が大きく冬から春への移り変わりは早く、夏は比較的長いことが多いようです。<br>
+</p>
+<br>
+        <hr>
+<br>
+      <blockquote cite="https://ja.wikipedia.org/wiki/%E7%86%8A%E6%9C%AC%E7%9C%8C">
+<a href="https://ja.wikipedia.org/wiki/%E7%86%8A%E6%9C%AC%E7%9C%8C">熊本县（维基百科）</a>
+<br>
+<b>名称</b>
+<br>
+熊本という地名は、古くは隈本と書いた。
+<br>
+隈本の由来には諸説あるが、菊池則隆に因むとする伝承がある。<br>
+「隈本」の名が文献に見られるのは南北朝時代以降で、これを加藤清正が「隈」の字が畏（おそれる、かしこまる）の字を含むため武将の居城の名に相応しくないとして「熊」の字を充てたと言われている。<br>
+なお「来熊」「訪熊」「帰熊」と1文字で略するときは「熊（ゆう）」と音読みを使用する。<br>
+<br>
+<b>地理・地域</b>
+<br>
+九州本島の中央部に位置し、福岡、大分、宮崎、鹿児島の各県と境を接する。<br>
+海上で有明海を隔て長崎県とも接する。<br>
+東部の阿蘇地方に日本第2位の阿蘇カルデラを持つ阿蘇山や九州山地の山々が聳え、西部は熊本平野が有明海に、八代平野および芦北地方のリアス式海岸が不知火海に面する。<br>
+その間に宇土半島が突き出し天草諸島に続いている。中心都市である熊本市は、市域の70万人超の人口を支える水道水が全て地下水でまかなわれている世界でも稀有な都市である。<br>
+
+</blockquote>
+</section>
+    
+    <section>
+        <h2>城区</h2>
+        
+        <div class="city-card">
+            <h3>熊本主城</h3>
+            <p>熊本城的主要区域，是行政和文化的中心。</p>
+            	<p></p>
+          		<h4>主要建筑与机构</h4>
+				<p>熊本会议阁、熊本生物多样性研究与环境保护中心、东日灯台、熊本港、玉名农场</p>
+          		<h4>自然景观</h4>
+                <p>金峰山</p>
+        </div>
+        
+        <div class="city-card">
+            <h3>若洲城</h3>
+            <p>熊本下辖城镇，自然资源与能源厅所在地，负责资源管理和能源开发。</p>
+                <p></p>
+          		<h4>主要建筑与机构</h4>
+				<p>若洲矿场</p>
+
+        </div>
+        
+        <div class="city-card">
+            <h3>八代城</h3>
+            <p>熊本下辖城镇，农业水利部和外务部所在地，负责农业发展和对外事务。</p>
+            	<p></p>
+          		<h4>主要建筑与机构</h4>
+				<p>川上茶室</p>
+        </div>
+    </section>
+    
+    <section>
+        <h2>事件</h2>
+        
+        <div class="event">
+            <h3>熊本城城主更替 Comecat→Natsugiri</h3>
+            <p>因前城主 Comecat 学业繁忙，故于 2025年8月23日 将城主所有实权转移至好友 Natsugiri ，并于当日晚八点在 熊本城会议阁 举行城主更替仪式。
+              <br>
+              <p>下附公告</p>
+         <div class="article">  
+            <box><i>
+            <p>致fp11周目全体成员与朋友们:<br></p>
+<br>
+ <p>我是熊本城的现任城主/知事Comecat。在此我向大家宣布一则重要的消息：本人由于现实学业原因，在未来的一年中我将暂时卸任熊本城城主一职，并由熊本城副知事Natsugiri全权接任城镇的管理与领导工作。
+<br>
+<br>
+自熊本城建立以来，我们从一个小小的港口到现在拥有和风现代化合璧建筑群与完善交通体系的城镇，这一路走来，感谢成员们的同心协力与各方朋友的大力支持！<br> </p>
+<br>
+ <p>Natsugiri与我同为熊本城主要建立者，在城镇建立初期便深度参与建设规划和运营，他的决策能力、责任心与创造力均值得信赖。我相信，在他的带领下，熊本城将不断继往开来，永续发展，与各势力、国家/城镇保持友好协作，为推动共同发展与促进文明进步向正确方向发展贡献智慧与力量。 </p>
+<br>
+ <p>关于本人Comecat财产的处理安排如下 </p>
+
+ <p>截至2025年8月23日 Comecat的账户内存有余额11390.25FP </p>
+分配方式如下：
+<br>
+1.其中1500FP赠予和歌山城主LX_Domod，用于支持该城发展；<br>
+2.除去本人Comecat，向每位熊本城成员赠予500FP，聊表谢意；<br>
+3.剩余6890.25FP全部存于熊本城内银行，专用于未来建设与发展。<br>
+<br>
+最后，衷心感谢FishPort服务器管理团队与朋友们的理解与支持！愿费事破特越来越好，愿我们的故事永不落幕。
+<br>
+              <br>
+Comecat<br>
+2025年8月23日<br>
+              </i>
+              
+              </box>
+
+           </div>
+          <p>新晋城主 Natsugiri 已在2025年8月26日17:16完成财产分配</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>© 2025 熊本建设株式会社</p>
+    </footer>
+</body>
+
+</html>
+
+
+
